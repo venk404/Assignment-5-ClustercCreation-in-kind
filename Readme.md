@@ -21,10 +21,12 @@ Three nodes with specific purposes:
 ```bash
 # Refer to documentation
 https://kind.sigs.k8s.io/docs/user/quick-start/
+```
 
 2) Install Kubectl, refer to the documentation provided below for installation instructions.
-
+```bash
   https://kubernetes.io/docs/tasks/tools/
+```
 
 
 3) Clone the repository and Navigate to directory:
