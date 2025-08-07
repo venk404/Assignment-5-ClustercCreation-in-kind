@@ -39,6 +39,8 @@ https://kind.sigs.k8s.io/docs/user/quick-start/
 ```bash
   kind create cluster --name multinode-cluster  --config .\clusters.yml 
 
+  kubectl cluster-info --context kind-multinode-cluster
+
   #Check if the nodes are properly created and confirm that the volume exists by inspecting the folder on the local machine.
   kubectl get nodes 
 ```
@@ -54,4 +56,9 @@ https://kind.sigs.k8s.io/docs/user/quick-start/
 6) Let's check if the label is associated with the node.
 ```bash
   kubectl get nodes --show-labels
+```
+
+7) Deleting the Kind Cluster
+```bash
+kind delete cluster --name multinode-cluster
 ```
